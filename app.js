@@ -21,7 +21,6 @@ const router = require('./src/Routes/api');
 
 
 
-
 //Application Routes
 app.use('/api/v1',router);
 //Undefined routes
@@ -31,8 +30,5 @@ app.use('*',(req,res)=>{
         data:"Not Found"
     })
 })
-
-
-
 
 module.exports=app;
